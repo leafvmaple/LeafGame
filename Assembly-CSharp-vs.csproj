@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{025B7FE8-A6BA-7BBE-743B-DDB3380D69F5}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_0;UNITY_4_5;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>D:/Win7/Software/Editor/Unity/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>D:/Win7/Software/Editor/Unity/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
+     <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
+     <Compile Include="Assets\UnityChan\Scripts\IdleChanger.cs" />
+     <Compile Include="Assets\UnityChan\Scripts\SceneLoader.cs" />
+     <Compile Include="Assets\UnityChan\Scripts\ThirdPersonCamera.cs" />
+     <Compile Include="Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
+     <Compile Include="Assets\scripts\MaxCamera.cs" />
+     <Compile Include="Assets\scripts\common\Common.cs" />
+     <Compile Include="Assets\scripts\gameui\CustomCursor.cs" />
+     <Compile Include="Assets\scripts\gameui\Hud_Infos.cs" />
+     <Compile Include="Assets\scripts\gameui\ObjectLabel.cs" />
+     <Compile Include="Assets\scripts\gameui\ShowFPS.cs" />
+     <Compile Include="Assets\scripts\gameui\UI_Chat.cs" />
+     <Compile Include="Assets\scripts\gameui\UI_DBuff.cs" />
+     <Compile Include="Assets\scripts\gameui\UI_DBuffBoxs.cs" />
+     <Compile Include="Assets\scripts\gameui\UI_Keys.cs" />
+     <Compile Include="Assets\scripts\gameui\UI_Minimap.cs" />
+     <Compile Include="Assets\scripts\gameui\UI_SysItemBoxs.cs" />
+     <Compile Include="Assets\scripts\gameui\UI_TextMap.cs" />
+     <Compile Include="Assets\scripts\gameui\UI_WorldMap.cs" />
+     <Compile Include="Assets\scripts\gameui\game_ui_autopos.cs" />
+     <Compile Include="Assets\scripts\gameui\worldmap_getpic.cs" />
+     <Compile Include="Assets\scripts\go\Asset.cs" />
+     <Compile Include="Assets\scripts\go\LoadAssetsPool.cs" />
+     <Compile Include="Assets\scripts\go\init_screen.cs" />
+     <Compile Include="Assets\scripts\go\loader.cs" />
+     <Compile Include="Assets\scripts\loadingbar\loadingbar.cs" />
+     <Compile Include="Assets\scripts\loadingbar\loadingbar_backgroundpic.cs" />
+     <Compile Include="Assets\scripts\login\backbtn.cs" />
+     <Compile Include="Assets\scripts\login\backgroundpic.cs" />
+     <Compile Include="Assets\scripts\login\log_label.cs" />
+     <Compile Include="Assets\scripts\login\loginbtn.cs" />
+     <Compile Include="Assets\scripts\login\loginpanel.cs" />
+     <Compile Include="Assets\scripts\login\losepasswordbtn.cs" />
+     <Compile Include="Assets\scripts\login\password.cs" />
+     <Compile Include="Assets\scripts\login\reg_password.cs" />
+     <Compile Include="Assets\scripts\login\reg_passwordok.cs" />
+     <Compile Include="Assets\scripts\login\reg_username.cs" />
+     <Compile Include="Assets\scripts\login\register_commit_btn.cs" />
+     <Compile Include="Assets\scripts\login\registerbtn.cs" />
+     <Compile Include="Assets\scripts\login\repassword_label.cs" />
+     <Compile Include="Assets\scripts\login\ui.cs" />
+     <Compile Include="Assets\scripts\login\username.cs" />
+     <Compile Include="Assets\scripts\particles\particles.cs" />
+     <Compile Include="Assets\scripts\selavatar\CameraShake.cs" />
+     <Compile Include="Assets\scripts\selavatar\RotateMode.cs" />
+     <Compile Include="Assets\scripts\selavatar\curravatar.cs" />
+     <Compile Include="Assets\scripts\selavatar\curravatar_shadow.cs" />
+     <Compile Include="Assets\scripts\selavatar\selavatar_ui.cs" />
+     <Compile Include="Assets\scripts\selavatar\wpgroups.cs" />
+     <Compile Include="Assets\scripts\world\GameEntityCtrl.cs" />
+     <Compile Include="Assets\scripts\world\KBEEventProc.cs" />
+     <Compile Include="Assets\scripts\world\Scene.cs" />
+     <Compile Include="Assets\scripts\world\SceneEntityObject.cs" />
+     <Compile Include="Assets\scripts\world\SceneObject.cs" />
+     <Compile Include="Assets\scripts\world\SpawnPoint.cs" />
+     <Compile Include="Assets\scripts\world\TargetManger.cs" />
+     <Compile Include="Assets\scripts\world\WorldManager.cs" />
+     <Compile Include="Assets\scripts\xinshoucun\xinshoucun_worldmgr.cs" />
+     <Compile Include="Assets\thirdparty\FPSGraph\FPSGraphC.cs" />
+     <Compile Include="Assets\thirdparty\HUD Text\Examples\Scripts\ChatManager.cs" />
+     <Compile Include="Assets\thirdparty\HUD Text\Examples\Scripts\ChatParticipant.cs" />
+     <Compile Include="Assets\thirdparty\HUD Text\Examples\Scripts\ColliderDisplayText.cs" />
+     <Compile Include="Assets\thirdparty\HUD Text\Examples\Scripts\HUDRoot.cs" />
+     <Compile Include="Assets\thirdparty\HUD Text\Examples\Scripts\LightFlicker.cs" />
+     <Compile Include="Assets\thirdparty\HUD Text\Examples\Scripts\LookAtTarget.cs" />
+     <Compile Include="Assets\thirdparty\HUD Text\Examples\Scripts\PlayIdleAnimations.cs" />
+     <Compile Include="Assets\thirdparty\HUD Text\Examples\Scripts\Rotate.cs" />
+     <Compile Include="Assets\thirdparty\HUD Text\Scripts\HUDText.cs" />
+     <Compile Include="Assets\thirdparty\HUD Text\Scripts\UIFollowTarget.cs" />
+     <Compile Include="Assets\thirdparty\HighlightingSystemDemo\Scripts\CameraTargeting.cs" />
+     <Compile Include="Assets\thirdparty\HighlightingSystemDemo\Scripts\CompoundObjectController.cs" />
+     <Compile Include="Assets\thirdparty\HighlightingSystemDemo\Scripts\DelayedDestroyController.cs" />
+     <Compile Include="Assets\thirdparty\HighlightingSystemDemo\Scripts\FlashingController.cs" />
+     <Compile Include="Assets\thirdparty\HighlightingSystemDemo\Scripts\HighlightingController.cs" />
+     <Compile Include="Assets\thirdparty\HighlightingSystemDemo\Scripts\OccluderController.cs" />
+     <Compile Include="Assets\thirdparty\HighlightingSystemDemo\Scripts\RotationController.cs" />
+     <Compile Include="Assets\thirdparty\HighlightingSystemDemo\Scripts\SceneLoader.cs" />
+     <Compile Include="Assets\thirdparty\HighlightingSystemDemo\Scripts\SpectrumController.cs" />
+     <Compile Include="Assets\thirdparty\HighlightingSystemDemo\Scripts\StaticOccluderController.cs" />
+     <Compile Include="Assets\thirdparty\HighlightingSystemDemo\Scripts\WallMovementController.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\LanguageSelection.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIButton.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIButtonActivate.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIButtonColor.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIButtonKeyBinding.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIButtonKeys.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIButtonMessage.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIButtonOffset.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIButtonRotation.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIButtonScale.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UICenterOnChild.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIDragCamera.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIDragObject.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIDragPanelContents.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIDraggableCamera.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIDraggablePanel.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIForwardEvents.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIGrid.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIImageButton.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIInputValidator.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIPlayAnimation.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIPlaySound.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIPlayTween.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIPopupList.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UISavedOption.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIScrollBar.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UISlider.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UISoundVolume.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UITable.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIToggle.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIToggledComponents.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIToggledObjects.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Interaction\UIWidgetContainer.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Internal\ActiveAnimation.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Internal\AnimationOrTween.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Internal\BMFont.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Internal\BMGlyph.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Internal\BMSymbol.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Internal\BetterList.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Internal\ByteReader.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Internal\EventDelegate.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Internal\Localization.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Internal\NGUIDebug.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Internal\NGUIMath.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Internal\NGUITools.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Internal\RealTime.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Internal\SpringPanel.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Internal\UIDrawCall.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Internal\UIEventListener.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Internal\UIGeometry.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Internal\UIWidget.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Tweening\AnimatedAlpha.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Tweening\AnimatedColor.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Tweening\SpringPosition.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Tweening\TweenAlpha.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Tweening\TweenColor.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Tweening\TweenFOV.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Tweening\TweenHeight.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Tweening\TweenOrthoSize.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Tweening\TweenPosition.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Tweening\TweenRotation.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Tweening\TweenScale.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Tweening\TweenTransform.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Tweening\TweenVolume.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Tweening\TweenWidth.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\Tweening\UITweener.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\UI\UIAnchor.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\UI\UIAtlas.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\UI\UICamera.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\UI\UIFont.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\UI\UIInput.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\UI\UILabel.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\UI\UILocalize.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\UI\UIOrthoCamera.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\UI\UIPanel.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\UI\UIRoot.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\UI\UISprite.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\UI\UISpriteAnimation.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\UI\UISpriteData.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\UI\UIStretch.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\UI\UITextList.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\UI\UITexture.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\UI\UITooltip.cs" />
+     <Compile Include="Assets\thirdparty\NGUI\Scripts\UI\UIViewport.cs" />
+     <Compile Include="Assets\thirdparty\RPG_Camera_Controller\Scripts\RPG_Animation.cs" />
+     <Compile Include="Assets\thirdparty\RPG_Camera_Controller\Scripts\RPG_Animation_CharacterFadeOnly.cs" />
+     <Compile Include="Assets\thirdparty\RPG_Camera_Controller\Scripts\RPG_Camera.cs" />
+     <Compile Include="Assets\thirdparty\RPG_Camera_Controller\Scripts\RPG_Controller.cs" />
+     <Compile Include="Assets\thirdparty\ShurikenMagic\Scripts\SM_moveToEntity.cs" />
+     <Compile Include="Assets\thirdparty\Toad_monster\scripts\characterRotate.cs" />
+     <Compile Include="Assets\thirdparty\WallVisionOutlineEffect\WallVisionOutlineEffect.cs" />
+     <Compile Include="Assets\villarger_A_girl\scripts\characterRotate.cs" />
+     <None Include="Assets\thirdparty\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
+     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
+     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\thirdparty\HUD Text\Examples\Models\Orc\Orc Skin.shader" />
+     <None Include="Assets\villarger_A_girl\ReadMe_[ v 1.5 ]_ 01_26.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowConeTap.shader" />
+     <None Include="Assets\thirdparty\TerrainSlicing\Unity4_x_x_users_READ_ME_FIRST.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
+     <None Include="Assets\thirdparty\NGUI\Resources\Shaders\GUI - Text Shader (SoftClip).shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurves.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\NFAA.shader" />
+     <None Include="Assets\thirdparty\NGUI\Resources\Shaders\Unlit - Dynamic Font (AlphaClip).shader" />
+     <None Include="Assets\thirdparty\NGUI\Resources\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="Assets\thirdparty\TerrainSlicing\Instructions\Neighboring_Quick_Start.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\VignetteShader.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlur.shader" />
+     <None Include="Assets\thirdparty\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (AlphaClip) .shader" />
+     <None Include="Assets\thirdparty\WallVisionOutlineEffect\WallVisionOutlineEffectOccluder.shader" />
+     <None Include="Assets\thirdparty\FPSGraph\ReadMe.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowCompose.shader" />
+     <None Include="Assets\Plugins\readme.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\MinMaxReduction.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\SSAA.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\RadialBlur.shader" />
+     <None Include="Assets\StreamingAssets\loadingbar_spawnpoints.xml" />
+     <None Include="Assets\Plugins\HighlightingSystem\Resources\HighlightingBlur.shader" />
+     <None Include="Assets\thirdparty\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (AlphaClip).shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ContrastComposite.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset3.shader" />
+     <None Include="Assets\StreamingAssets\selavatar_spawnpoints.xml" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\models\monsters\dragon\dragon.txt" />
+     <None Include="Assets\scenes\selavatar\Source\Shaders\Blend SM3.shader" />
+     <None Include="Assets\Plugins\HighlightingSystem\Resources\HighlightingStencilTransparent.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\UnityChan\license.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
+     <None Include="Assets\Plugins\HighlightingSystem\Resources\HighlightingInclude.cginc" />
+     <None Include="Assets\thirdparty\NGUI\Resources\Shaders\Unlit - Transparent Colored (AlphaClip).shader" />
+     <None Include="Assets\thirdparty\NGUI\Resources\Shaders\GUI - Text Shader (AlphaClip).shader" />
+     <None Include="Assets\StreamingAssets\Locomotion.xml" />
+     <None Include="Assets\StreamingAssets\Villarger_A_Girl_spawnpoints.xml" />
+     <None Include="Assets\font\ui_font_source.txt" />
+     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
+     <None Include="Assets\Plugins\HighlightingSystem\Resources\HighlightingComposite.shader" />
+     <None Include="Assets\thirdparty\TerrainSlicing\Instructions\Slicing_Quick_Start.txt" />
+     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\thirdparty\NGUI\Resources\Shaders\Unlit - Dynamic Font (SoftClip).shader" />
+     <None Include="Assets\StreamingAssets\Villarger_A_Girl.xml" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShift.shader" />
+     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
+     <None Include="Assets\Plugins\HighlightingSystem\Resources\HighlightingStencilOpaqueZ.shader" />
+     <None Include="Assets\ui\ui.txt" />
+     <None Include="Assets\StreamingAssets\Locomotion_spawnpoints.xml" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ConvertDepth.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurvesSimple.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderYUV.shader" />
+     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowEffectDownsample.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\CreaseApply.shader" />
+     <None Include="Assets\thirdparty\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (SoftClip).shader" />
+     <None Include="Assets\thirdparty\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (SoftClip).shader" />
+     <None Include="Assets\CAI\GlobalAssets\ReadMe.txt" />
+     <None Include="Assets\ui\selavatar.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ChromaticAberrationShader.shader" />
+     <None Include="Assets\thirdparty\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlobalFog.shader" />
+     <None Include="Assets\thirdparty\NGUI\Resources\Shaders\Unlit - Dynamic Font.shader" />
+     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
+     <None Include="Assets\StreamingAssets\login.xml" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Luminance.shader" />
+     <None Include="Assets\thirdparty\HUD Text\ReadMe - 1.8.txt" />
+     <None Include="Assets\ui\loadingbar.txt" />
+     <None Include="Assets\thirdparty\NGUI\ReadMe - 3.0.2.txt" />
+     <None Include="Assets\thirdparty\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+     <None Include="Assets\thirdparty\WallVisionOutlineEffect\readme.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionSelective.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\Bokeh34.shader" />
+     <None Include="Assets\UnityChan\Stage\Shader\AlphaMask.shader" />
+     <None Include="Assets\StreamingAssets\selavatar.xml" />
+     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
+     <None Include="Assets\thirdparty\femaleWarrior\Readme.txt" />
+     <None Include="Assets\StreamingAssets\ARPoseTest.xml" />
+     <None Include="Assets\font\3500Font.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
+     <None Include="Assets\Plugins\HighlightingSystem\Resources\HighlightingStencilOpaque.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+     <None Include="Assets\thirdparty\WallVisionOutlineEffect\WallVisionOutlineEffectCombine.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlurEffectConeTaps.shader" />
+     <None Include="Assets\Pro Standard Assets\Water\Sources\FX-Water.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\DLAA.shader" />
+     <None Include="Assets\ui\gameguiatlas.txt" />
+     <None Include="Assets\thirdparty\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed).shader" />
+     <None Include="Assets\scenes\selavatar\Source\Shaders\Blend SM2.shader" />
+     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableBlur.shader" />
+     <None Include="Assets\thirdparty\HUD Text\Examples\Atlases\Arimo20.txt" />
+     <None Include="Assets\thirdparty\fantasy horde_Barbarians\Shader\Compressed MaskedShader2sided 5-4 cut out.shader" />
+     <None Include="Assets\models\monsters\Zombie\ReadMe.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionEffect.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GrayscaleEffect.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SepiaToneEffect.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Adaptation.shader" />
+     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
+     <None Include="Assets\Editor\SplitTerrain\SliceTerrain.txt" />
+     <None Include="Assets\StreamingAssets\xinshoucun.xml" />
+     <None Include="Assets\shaders\character.shader" />
+     <None Include="Assets\thirdparty\NGUI\1. Which Version To Import.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
+     <None Include="Assets\StreamingAssets\ActionCheck_spawnpoints.xml" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Tonemapper.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="Assets\thirdparty\NGUI\Resources\Shaders\Unlit - Additive Colored.shader" />
+     <None Include="Assets\shaders\TransparentMast.shader" />
+     <None Include="Assets\StreamingAssets\login_spawnpoints.xml" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="Assets\crossdomain.xml" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectNormals.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\PrepareSunShaftsBlur.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\Blend.shader" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlendModesOverlay.shader" />
+     <None Include="Assets\thirdparty\HUD Text\Examples\Atlases\Large.txt" />
+     <None Include="Assets\StreamingAssets\xinshoucun_spawnpoints.xml" />
+     <None Include="Assets\thirdparty\NGUI\Resources\Shaders\Unlit - Depth.shader" />
+     <None Include="Assets\thirdparty\ShurikenMagic\Shaders\SM_2sided_transparent.shader" />
+     <None Include="Assets\thirdparty\FPSGraph\FPSGraph-AndroidShader.shader" />
+     <None Include="Assets\Plugins\HighlightingSystem\Resources\HighlightingStencilTransparentZ.shader" />
+     <None Include="Assets\font\ui_font.fnt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SimpleClear.shader" />
+     <None Include="Assets\thirdparty\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
+     <None Include="Assets\StreamingAssets\loadingbar.xml" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="Assets\thirdparty\HUD Text\Examples\Models\Orc Armor\Orc Armor.shader" />
+     <None Include="Assets\StreamingAssets\ActionCheck.xml" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectX.shader" />
+     <None Include="Assets\StreamingAssets\ARPoseTest_spawnpoints.xml" />
+     <None Include="Assets\thirdparty\Toad_monster\ReadMe_ver 1.6.txt" />
+     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset2.shader" />
+     <None Include="Assets\thirdparty\ShurikenMagic\Shaders\SM_TransparentRim.shader" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>D:/projects/kbengine_unity3d_warring/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+ <Reference Include="cai-nav-u3d">
+ <HintPath>D:/projects/kbengine_unity3d_warring/Assets/CAI/cai-nav-u3d.dll</HintPath>
+ </Reference>
+ <Reference Include="cai-nav">
+ <HintPath>D:/projects/kbengine_unity3d_warring/Assets/CAI/cai-nav.dll</HintPath>
+ </Reference>
+ <Reference Include="cai-nmbuild-extras-u3d">
+ <HintPath>D:/projects/kbengine_unity3d_warring/Assets/CAI/cai-nmbuild-extras-u3d.dll</HintPath>
+ </Reference>
+ <Reference Include="cai-util-u3d">
+ <HintPath>D:/projects/kbengine_unity3d_warring/Assets/CAI/cai-util-u3d.dll</HintPath>
+ </Reference>
+ <Reference Include="cai-util">
+ <HintPath>D:/projects/kbengine_unity3d_warring/Assets/CAI/cai-util.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{CC36C42C-B47A-4669-5CDA-20D778B95751}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
